@@ -1,0 +1,15 @@
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.links li {
+  padding-right: 2rem;
+  list-style-type: none;
+}
+
+.links li:hover {
+  text-decoration: underline;
+}
