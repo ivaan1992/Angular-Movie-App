@@ -3,19 +3,21 @@ import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 
 import { TableComponent } from './table/table.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 
 
 @NgModule({
   declarations: [
-    TableComponent
+    TableComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
     MatTableModule
   ],
   exports: [
-    TableComponent
+    TableComponent,
   ]
 
 })
