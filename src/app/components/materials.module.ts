@@ -10,7 +10,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 @NgModule({
   declarations: [
     TableComponent,
-    FilterPipe
+    FilterPipe,
   ],
   imports: [
     CommonModule,
@@ -18,6 +18,7 @@ import { FilterPipe } from './pipe/filter.pipe';
   ],
   exports: [
     TableComponent,
+    FilterPipe
   ]
 
 })
