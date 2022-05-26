@@ -1,1 +1,4 @@
-<p>movies works!</p>
+<ng-container *ngFor="let movie of movies ">
+  <p>{{ movie | json }}</p>
+</ng-container>
+

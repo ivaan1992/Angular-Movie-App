@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesService } from '../../service/movies.service';
+import { MoviesResp } from '../../interface/movies.interface';
 
 @Component({
   selector: 'app-movies',
@@ -7,12 +8,11 @@ import { MoviesService } from '../../service/movies.service';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent {
+  movies: MoviesResp[] = [];
 
-  constructor( private movies: MoviesService  ) { }
-
-  call() {
-    this.movies.callMovies()
+  constructor(private moviesService: MoviesService) {
+    this.moviesService.callMovies().subscribe(res => {
+      this.movies = res
+    })
   }
-
-
 }
