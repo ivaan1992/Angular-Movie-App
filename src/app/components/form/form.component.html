@@ -1,0 +1,40 @@
+
+
+<form [formGroup]="contactForm">
+
+  Name:  <input
+    type="text"
+    placeholder="Name"
+    class="form-control"
+    formControlName="user"
+  />
+  {{ contactForm.get('user')?.errors | json }}
+
+  Email:  <input
+    type="email"
+    placeholder="Email"
+    class="form-control"
+    formControlName="useremail"
+  />
+  {{ contactForm.get('useremail')?.errors | json }}
+
+
+  Phone Number:  <input
+    type="text"
+    placeholder="Phone Number"
+    class="form-control"
+    formControlName="userphone"
+  />
+  {{ contactForm.get('userphone')?.errors | json }}
+
+
+  Message:  <textarea
+  type="text"
+  placeholder="Message"
+  class="form-control"
+  formControlName="Message">
+  </textarea>
+  {{ contactForm.get('Message')?.errors | json }}
+
+  <button>Send</button>
+</form>
