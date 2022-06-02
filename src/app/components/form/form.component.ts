@@ -14,12 +14,13 @@ export class FormComponent {
   ngOnInit(): void {
     const numReg = new RegExp(/^\+[0-9]*$/)
     this.contactForm = this.fb.group({
-      user: ['', [Validators.pattern(/^([A-Za-z]*)*([0-9]*)*$/)]],
+      user: ['', [Validators.pattern(/^(([A-Za-z]*)*([0-9]*)*)*$/)]],
       useremail: ['', [Validators.email]],
       userphone: ['', [Validators.pattern(numReg)]],
       Message: ['', Validators.maxLength(10)]
     })
   }
+
 
 
 

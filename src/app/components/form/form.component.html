@@ -8,7 +8,11 @@
     class="form-control"
     formControlName="user"
   />
-  {{ contactForm.get('user')?.errors | json }}
+
+  <ng-container *ngIf="contactForm.get('user')?.errors">
+    <p>Solo letras y numeros</p>
+  </ng-container>
+
 
   Email:  <input
     type="email"
@@ -16,7 +20,10 @@
     class="form-control"
     formControlName="useremail"
   />
-  {{ contactForm.get('useremail')?.errors | json }}
+
+  <ng-container *ngIf="contactForm.get('useremail')?.errors">
+    <p>Solo emails</p>
+  </ng-container>
 
 
   Phone Number:  <input
@@ -25,7 +32,9 @@
     class="form-control"
     formControlName="userphone"
   />
-  {{ contactForm.get('userphone')?.errors | json }}
+  <ng-container *ngIf="contactForm.get('userphone')?.errors">
+    <p>Este campo deberia iniciar con +</p>
+  </ng-container>
 
 
   Message:  <textarea
@@ -34,7 +43,10 @@
   class="form-control"
   formControlName="Message">
   </textarea>
-  {{ contactForm.get('Message')?.errors | json }}
+
+  <ng-container *ngIf="contactForm.get('Message')?.errors">
+    <p>Ya hay mas de 10 caracteres</p>
+  </ng-container>
 
   <button>Send</button>
 </form>
