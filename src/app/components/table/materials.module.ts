@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 
-import { TableComponent } from './table/table.component';
-import { FilterPipe } from './pipe/filter.pipe';
+import { TableComponent } from './table.component';
+import { FilterPipe } from '../pipe/filter.pipe';
 
 
 
@@ -18,7 +18,7 @@ import { FilterPipe } from './pipe/filter.pipe';
   ],
   exports: [
     TableComponent,
-    FilterPipe
+    FilterPipe,
   ]
 
 })

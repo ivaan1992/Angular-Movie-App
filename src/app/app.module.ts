@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { MaterialsModule } from './components/materials.module';
+import { MaterialsModule } from './components/table/materials.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContactModule } from './pages/contact/contact.module';
+import { ContactModule } from './components/form/contact-form.module';
 import { AppRoutingModule } from './app-routing.module';
 
 

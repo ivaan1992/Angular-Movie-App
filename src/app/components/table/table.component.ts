@@ -1,6 +1,6 @@
  import { Component } from '@angular/core';
  import { MoviesService } from '../../service/movies.service';
- import { MoviesResp } from '../../interface/movies.interface';
+ import { MoviesResp } from '../../interfaces/movies.interface';
 
 @Component({
   selector: 'app-table',
