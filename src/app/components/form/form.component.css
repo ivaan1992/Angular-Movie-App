@@ -1,16 +1,47 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 textarea {
-  max-width: 100%;
-  min-width: 95%;
+  max-width: 50%;
+  min-width: 50%;
   max-height: 5rem;
+  min-height: 3rem;
   margin-bottom: 1rem;
 }
 
 input {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+::placeholder {
+  font-size: 0.6rem;
+}
+
+
+.warn-text {
+  font-size: 10px;
+  font-style: italic;
+  color: red;
+}
+
+.send {
+  width: 10%;
+  height: 5vh;
+  font-size: 0.75rem;
+  background-color: #8d1717;
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.send:hover {
+  background-color: #000;
 }
