@@ -21,12 +21,12 @@ The purpose of this project is show my Angular skills.
  
 ##  💻Live Demo
 
-You can check my project <a href="https://6259967a85b0d915a5a221d6--musical-jelly-6f96dd.netlify.app/">Here</a>
+You can check my project <a href="https://629e48b1666308795438bad8--sensational-pika-8f4a95.netlify.app/">Here</a>
 
 
 ## Getting Started 
 
-- Clone the repo with git@github.com:ivaan1992/react-app.git
+- Clone the repo with git@github.com:ivaan1992/angular-movie-app.git
 - Open your terminal or command line
 - Run git clone and paste the link
 - Run ng serve -o to launch the server.
