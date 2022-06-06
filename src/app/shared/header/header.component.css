@@ -2,14 +2,26 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
-  cursor: pointer;
+  height: 10vh;
+  align-items: center;
 }
 
 .links li {
   padding-right: 2rem;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .links li:hover {
   text-decoration: underline;
+  color: #fff;
+}
+
+header {
+  background-image: url('../../../assets/video-icon-flat-11.jpg');
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-position-x: 1rem;
+  height: 10vh;
+  background-color: #8d1717;
 }
