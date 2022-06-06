@@ -2,7 +2,7 @@
 
 <form [formGroup]="contactForm">
 
-  Name:  <input
+  <input
     type="text"
     placeholder="Name"
     class="form-control"
@@ -10,11 +10,11 @@
   />
 
   <ng-container *ngIf="contactForm.get('user')?.errors">
-    <p>Solo letras y numeros</p>
+    <p class="warn-text">*Solo letras y numeros</p>
   </ng-container>
 
 
-  Email:  <input
+  <input
     type="email"
     placeholder="Email"
     class="form-control"
@@ -22,22 +22,22 @@
   />
 
   <ng-container *ngIf="contactForm.get('useremail')?.errors">
-    <p>Solo emails</p>
+    <p class="warn-text">*Solo emails</p>
   </ng-container>
 
 
-  Phone Number:  <input
+  <input
     type="text"
     placeholder="Phone Number"
     class="form-control"
     formControlName="userphone"
   />
   <ng-container *ngIf="contactForm.get('userphone')?.errors">
-    <p>Este campo deberia iniciar con +</p>
+    <p class="warn-text">*Este campo deberia iniciar con +</p>
   </ng-container>
 
 
-  Message:  <textarea
+  <textarea
   type="text"
   placeholder="Message"
   class="form-control"
@@ -45,8 +45,8 @@
   </textarea>
 
   <ng-container *ngIf="contactForm.get('Message')?.errors">
-    <p>Ya hay mas de 10 caracteres</p>
+    <p class="warn-text">*Ya hay mas de 10 caracteres</p>
   </ng-container>
 
-  <button>Send</button>
+  <button class="send">Send</button>
 </form>
