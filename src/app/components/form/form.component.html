@@ -45,7 +45,7 @@
   </textarea>
 
   <ng-container *ngIf="contactForm.get('Message')?.errors">
-    <p class="warn-text">*Ya hay mas de 10 caracteres</p>
+    <p class="warn-text">*Ya hay mas de {{ maxChars }} caracteres</p>
   </ng-container>
 
   <button class="send">Send</button>

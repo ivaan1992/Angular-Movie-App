@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,8 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
+  @Input() maxChars: number = 10;
+
   contactForm: FormGroup = new FormGroup({});
 
   constructor( private fb:FormBuilder) { }
@@ -17,7 +19,7 @@ export class FormComponent {
       user: ['', [Validators.pattern(/^(([A-Za-z]*)*([0-9]*)*)*$/)]],
       useremail: ['', [Validators.email]],
       userphone: ['', [Validators.pattern(numReg)]],
-      Message: ['', Validators.maxLength(10)]
+      Message: ['', Validators.maxLength(this.maxChars)]
     })
   }
 
