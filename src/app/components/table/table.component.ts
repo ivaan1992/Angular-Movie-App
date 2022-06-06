@@ -20,10 +20,10 @@ export class TableComponent {
 
    prevPage() {
      if( this.page >0 )
-      this.page -= 5;
+      this.page -= 100;
    }
 
    nextPage() {
-    this.page += 5;
+    this.page += 100;
  }
 }

@@ -1,9 +1,9 @@
-<div class="buttons">
-  <button (click)="prevPage()">Previous</button>
-  <button (click)="nextPage()">Next</button>
+<div class="buttons mat-raised-button">
+  <button class="prev-next-btns" mat-raised-button color="warn" (click)="prevPage()">Previous</button>
+  <button class="prev-next-btns" mat-raised-button color="warn" (click)="nextPage()">Next</button>
 </div>
 
-<table mat-table [dataSource]="movies | filter:page" class="movies-table">
+<table mat-table [dataSource]="movies | filter:page"  class="mat-elevation-z8 demo-table">
 
   <ng-container matColumnDef="title">
     <th mat-header-cell *matHeaderCellDef> Title </th>

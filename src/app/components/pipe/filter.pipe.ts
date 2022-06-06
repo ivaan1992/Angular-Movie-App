@@ -7,7 +7,7 @@ import { MoviesResp } from '../../interfaces/movies.interface';
 export class FilterPipe implements PipeTransform {
 
   transform( movieInfo: MoviesResp[], page: number = 0): MoviesResp[] {
-    return movieInfo.slice(page, page + 5);
+    return movieInfo.slice(page, page + 100);
   }
 
 }
